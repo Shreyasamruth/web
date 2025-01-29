@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Welcome to the Birthday Wishes Website! 🎂</h1>
+<p>Get a random personalized birthday wish for you or your loved ones.</p>
+<form action="/wishes" method="post">
+    <input type="text" name="name" placeholder="Enter Name" required>
+    <button type="submit">Get Wish</button>
+</form>
+{% endblock %}
